@@ -4,10 +4,8 @@ const { join } = require('path');
 const cron = require('node-cron');
 const ai = require('./jea/ai.js');
 
-const botToken = '7133993574:AAFWOi4Zh2qnTZT67OaE55e7cNOGGEr_MDs';// Replace with your bot token 
-const port = process.env.PORT || 8080;
+const botToken = '7133993574:AAFWOi4Zh2qnTZT67OaE55e7cNOGGEr_MDs'; // Replace with your bot token
 const bot = new TelegramBot(botToken, { polling: true });
-
 
 const commands = loadCommands('./commands');
 
